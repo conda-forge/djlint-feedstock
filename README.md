@@ -3,7 +3,7 @@ About djlint-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/djlint-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/Riverside-Healthcare/djlint
+Home: https://github.com/djlint/djLint
 
 Package license: GPL-3.0-or-later
 
