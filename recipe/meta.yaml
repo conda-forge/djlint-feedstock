@@ -1,5 +1,5 @@
 {% set name = "djlint" %}
-{% set version = "1.35.3" %}
+{% set version = "1.35.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/djlint-{{ version }}.tar.gz
-  sha256: 780ea3e25662fca89033fa96ecf656099954d6f81dce039eac90f4bba3cbe850
+  sha256: d4a1342d83e65171059925b87ab351a1d5201289a764f9e092ef7a99e312554e
 
 build:
   entry_points:
@@ -22,6 +22,7 @@ requirements:
     - hatchling
     - pip
   run:
+    - typing_extensions >=3.7.4
     - python >=3.9
     - click >=8.0.1
     - colorama >=0.4.4
