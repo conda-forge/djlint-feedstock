@@ -1,5 +1,5 @@
 {% set name = "djlint" %}
-{% set version = "1.35.2" %}
+{% set version = "1.35.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,31 +7,31 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/djlint-{{ version }}.tar.gz
-  sha256: 318de9d4b9b0061a111f8f5164ecbacd8215f449dd4bd5a76d2a691c815ee103
+  sha256: 780ea3e25662fca89033fa96ecf656099954d6f81dce039eac90f4bba3cbe850
 
 build:
   entry_points:
     - djlint = djlint:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
-    - python >=3.8.0,<4.0.0
-    - poetry-core >=1.0.0
+    - python >=3.9
+    - hatchling
     - pip
   run:
-    - python >=3.8.0,<4.0.0
+    - python >=3.9
     - click >=8.0.1
     - colorama >=0.4.4
     - cssbeautifier >=1.14.4
     - html-tag-names >=0.1.2
-    - html-void-elements >=0.1.0
+    - html-void-elements >=0.1
     - jsbeautifier >=1.14.4
     - json5 >=0.9.11
-    - pathspec >=0.12.0
-    - pyyaml >=6.0
+    - pathspec >=0.12
+    - pyyaml >=6
     - regex >=2023
     - tomli >=2.0.1
     - tqdm >=4.62.2
