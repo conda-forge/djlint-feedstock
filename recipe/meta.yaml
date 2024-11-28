@@ -18,12 +18,12 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - hatchling
     - pip
   run:
+    - python >={{ python_min }}
     - typing_extensions >=3.7.4
-    - python >=3.9
     - click >=8.0.1
     - colorama >=0.4.4
     - cssbeautifier >=1.14.4
@@ -44,6 +44,7 @@ test:
     - pip check
     - djlint --help
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
