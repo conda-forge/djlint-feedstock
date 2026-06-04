@@ -1,5 +1,5 @@
 {% set name = "djlint" %}
-{% set version = "1.37.0" %}
+{% set version = "1.38.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/djlint-{{ version }}.tar.gz
-  sha256: 4598b3b3ba2ef619aebe1b37060fdefb2ff6f08143250642d9a1b3c62c1b94ba
+  sha256: caec391b07fe440a2cbdc2ea9fcad5b3eede9a01043958d38fb511cbefa3a525
 
 build:
   entry_points:
