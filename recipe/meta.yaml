@@ -11,10 +11,10 @@ source:
 
 build:
   entry_points:
-    - djlint = djlint:main
+    - djlint = djlint._cli:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -25,17 +25,12 @@ requirements:
     - python >={{ python_min }}
     - typing_extensions >=4.4.0
     - click >=8.2.0
-    - colorama >=0.4.4
     - cssbeautifier >=1.13.0
-    - html-tag-names >=0.1.2
-    - html-void-elements >=0.1
     - jsbeautifier >=1.13.0
     - json5 >=0.10.0
     - pathspec >=0.9.0
     - pyyaml >=5.1
     - regex >=2021.8.21
-    - tomli >=2.0.1
-    - tqdm >=4.62.2
 
 test:
   imports:
@@ -49,7 +44,9 @@ test:
 
 about:
   home: https://github.com/djlint/djLint
-  summary: HTML Template Linter and Formatter
+  summary: HTML template linter and formatter (Django, Jinja, Twig, Nunjucks, Handlebars, Mustache, Liquid, Go templates, Angular, Tera, Askama, Mako)
+  doc_url: https://djlint.com
+  dev_url: https://github.com/djlint/djLint
   license: GPL-3.0-or-later
   license_file: LICENSE
 
