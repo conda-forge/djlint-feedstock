@@ -1,5 +1,5 @@
 {% set name = "djlint" %}
-{% set version = "1.50.1" %}
+{% set version = "1.50.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/djlint-{{ version }}.tar.gz
-  sha256: c9cae9b57d61ee670a7fa0e08d3af381dd0d14e49ef5faac187c185936d9f151
+  sha256: 5248f84768e4a6525e89bbf52be93fb7e91a3f96179ba8685240838a03c898b0
 
 build:
   entry_points:
     - djlint = djlint._cli:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -30,7 +30,7 @@ requirements:
     - json5 >=0.10.0
     - pathspec >=0.9.0
     - pyyaml >=5.1
-    - regex >=2021.8.21
+    - regex >=2020.10.22
 
 test:
   imports:
