@@ -7,7 +7,11 @@ Home: https://github.com/djlint/djLint
 
 Package license: GPL-3.0-or-later
 
-Summary: HTML Template Linter and Formatter
+Summary: HTML template linter and formatter (Django, Jinja, Twig, Nunjucks, Handlebars, Mustache, Liquid, Go templates, Angular, Tera, Askama, Mako)
+
+Development: https://github.com/djlint/djLint
+
+Documentation: https://djlint.com
 
 Current build status
 ====================
