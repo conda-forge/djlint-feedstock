@@ -1,5 +1,5 @@
 {% set name = "djlint" %}
-{% set version = "1.54.0" %}
+{% set version = "1.54.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/djlint-{{ version }}.tar.gz
-  sha256: 2086b83e151af72c20595e15d6017469bc69dfb4f832558d7f374a252e99f01b
+  sha256: 4ee5783cb0b31efe239a4edf467dead6bed45d882980b5edf3cebc43a0c5ff38
 
 build:
   entry_points:
